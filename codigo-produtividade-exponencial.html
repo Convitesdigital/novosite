@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código da Produtividade Exponencial: Como Multiplicar Resultados | Ebooks Exclusivo</title>
+    
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; text-align: center; margin: 0; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px; }
+        .timer-bar { background: #ff4d4d; color: white; padding: 10px; font-weight: bold; position: sticky; top: 0; }
+        .capa-ebook { width: 100%; max-width: 300px; border-radius: 10px; margin: 20px 0; }
+        .estrelas { color: #f39c12; font-size: 1.5rem; }
+        .badge { background: #ffd700; display: inline-block; padding: 5px 15px; border-radius: 5px; font-weight: bold; margin: 10px 0; }
+        .btn-comprar { display: block; background: #28a745; color: white; padding: 15px; margin: 20px 0; text-decoration: none; font-size: 1.2rem; border-radius: 5px; font-weight: bold; transition: background 0.3s; }
+        .btn-comprar:hover { background: #218838; }
+    </style>
+</head>
+<body>
+
+    <div class="timer-bar">ATENÇÃO: Descontos especiais expiram em: <span id="timer">00:30</span></div>
+
+    <main class="container">
+        <img src="1.jpeg" alt="Capa do Ebook" class="capa-ebook">
+        
+        <h1>O CÓDIGO DA PRODUTIVIDADE EXPONENCIAL: Como Dominar o Tempo e Multiplicar Seus Resultados em Metade do Tempo.</h1>
+        <div class="estrelas">★★★★★</div>
+        <p class="badge">Ebook mais vendido</p>
+
+        <p class="descricao">
+            O Código da Produtividade Exponencial é um guia estratégico focado na transição da produtividade convencional — baseada apenas em "fazer mais coisas" — para um modelo de alto desempenho, focado em eficiência e impacto.
+            A premissa central do ebook é que o sucesso não depende de trabalhar mais horas, mas sim de dominar a gestão da energia e do foco para obter resultados desproporcionais.
+
+        <a href="https://go.hotmart.com/Y106649432S" class="btn-comprar">ADQUIRIR AGORA</a>
+    </main>
+
+    <script>
+        function iniciarTimer(duracao, display) {
+            let timer = duracao;
+            setInterval(function () {
+                let segundos = parseInt(timer % 60, 10);
+                display.textContent = "00:" + (segundos < 10 ? "0" + segundos : segundos);
+                if (--timer < 0) { timer = duracao; }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            let tempo = 30;
+            let display = document.querySelector('#timer');
+            iniciarTimer(tempo, display);
+        };
+    </script>
+</body>
+</html>
